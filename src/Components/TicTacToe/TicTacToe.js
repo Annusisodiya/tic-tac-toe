@@ -52,7 +52,7 @@ const TicTacToe =()=>{
         {
             won(data[5]);
         }
-        else if(data[6]===data[7] && data[7]===data[8] && data[9]!=="")
+        else if(data[6]===data[7] && data[7]===data[8] && data[8]!=="")
         {
             won(data[8]);
         }
@@ -97,7 +97,7 @@ const TicTacToe =()=>{
       }
       const reset = ()=>{
         setLock(false);
-        let data =["","","","","","","","",""];
+        data =["","","","","","","","",""];
         titleRef.current.innerHTML =  'Tic Tac Toe In <span>React<span/>'
         box_array.map((e)=>{
            e.current.innerHTML = "";
@@ -112,7 +112,7 @@ const TicTacToe =()=>{
                 <div className="board">
                     <div className="row1">
                         <div className="boxes" ref={box1} onClick={(e)=>{toggle(e,0)}}></div>
-                        <div className="boxes" ref={box3} onClick={(e)=>{toggle(e,1)}}></div>
+                        <div className="boxes" ref={box2} onClick={(e)=>{toggle(e,1)}}></div>
                         <div className="boxes" ref={box3} onClick={(e)=>{toggle(e,2)}}></div>
                     </div>
                     <div className="row2">
